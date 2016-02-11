@@ -3,7 +3,7 @@
 #include <LiquidCrystal.h>
 #include <avr/pgmspace.h>
 
-#define _DEBUG
+// #define _DEBUG
 
 // RX and TX for UNO
 int SSrx = 8;
@@ -41,8 +41,11 @@ void loop()
   // too little and we might read from an empty
   // buffer
   if (RFIDReader.available() > 13)
-  {      
-    drawLCD(getTag(&RFIDReader));
+  {
+    String tag = getTag(&RFIDReader); 
+    
+    Serial.println(tag);     
+    drawLCD(tag);
   }
 }
 

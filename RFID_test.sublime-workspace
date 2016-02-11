@@ -27,19 +27,8 @@
 			"file": "RFID_test.ino",
 			"settings":
 			{
-				"buffer_size": 1393,
+				"buffer_size": 1448,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "24852495749556569695452503248524957495565696954525032485249574955656969545250324852495749556569695452503",
-			"settings":
-			{
-				"buffer_size": 104,
-				"line_ending": "Unix",
-				"name": "Serial Monitor - /dev/cu.usbmodem1421",
-				"read_only": true,
-				"scratch": true
 			}
 		}
 	],
@@ -139,15 +128,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1393,
+						"buffer_size": 1448,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1358,
-								1358
+								1430,
+								1430
 							]
 						],
 						"settings":
@@ -157,38 +146,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 461.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 104,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								104,
-								104
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -446,6 +407,26 @@
 		"height": 100.0
 	},
 	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1455117780.21288":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1455146449.175269":
+	{
+		"height": 646.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1455146459.019543":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1455146581.598021":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1455146600.556847":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1455147475.683079":
 	{
 		"height": 100.0
 	},
@@ -986,6 +967,18 @@
 		"height": 100.0
 	},
 	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1455117824.003196":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1455148100.958941":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1455148127.33019":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1455148168.156316":
 	{
 		"height": 100.0
 	},
