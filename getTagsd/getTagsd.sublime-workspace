@@ -1,0 +1,1035 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tag",
+				"tag_number	statement"
+			],
+			[
+				"get",
+				"getReaderID"
+			],
+			[
+				"read",
+				"readable	function"
+			],
+			[
+				"_ser",
+				"_serial_number	param"
+			],
+			[
+				"inser",
+				"insertNewTag"
+			],
+			[
+				"reader",
+				"reader_id	statement"
+			],
+			[
+				"cu",
+				"cursor"
+			],
+			[
+				"serial",
+				"serial_number	statement"
+			],
+			[
+				"_ta",
+				"_tag_id	statement"
+			],
+			[
+				"ta",
+				"tagExists"
+			],
+			[
+				"sca",
+				"scan_id	statement"
+			],
+			[
+				"tag_",
+				"tag_id"
+			],
+			[
+				"insert",
+				"insertScan	function"
+			],
+			[
+				"_tag",
+				"_tag_id	statement"
+			],
+			[
+				"auto",
+				"autocommit_before	statement"
+			],
+			[
+				"as",
+				"ascii	function"
+			],
+			[
+				"w",
+				"w_dbx	statement"
+			],
+			[
+				"Tr",
+				"try	keyword"
+			],
+			[
+				"_query",
+				"_query_params	param"
+			],
+			[
+				"_db",
+				"_dbx	param"
+			],
+			[
+				"_cur",
+				"_cursor	statement"
+			],
+			[
+				"_",
+				"_rfidvalue"
+			],
+			[
+				"RFID",
+				"RFIDReader"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "getTagsd.py",
+			"settings":
+			{
+				"buffer_size": 3090,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "package",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Add Repository"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 217.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/rdemeritt/Documents/Arduino/getTagsd"
+	],
+	"file_history":
+	[
+		"/Users/rdemeritt/Documents/Arduino/getTagsd/addTag.py",
+		"/Users/rdemeritt/Documents/Arduino/getTagsd/getTagsd.py",
+		"/Users/rdemeritt/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/Users/rdemeritt/Documents/Arduino/getTagsd/getTagsd.sublime-project",
+		"/Users/rdemeritt/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/rdemeritt/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Applications/Arduino.app",
+		"/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h",
+		"/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/main.cpp",
+		"/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WString.h",
+		"/Users/rdemeritt/Documents/Arduino/RFID_test/RFID_test.ino"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "getTagsd.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3090,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2353,
+								2353
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1002.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.1454860676.489437":
+	{
+		"height": 100.0
+	},
+	"output.1454860705.133056":
+	{
+		"height": 100.0
+	},
+	"output.build|/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino|1454980991.925387":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454860781.382617":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454861008.89209":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454861026.036688":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454861111.304561":
+	{
+		"height": 324.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454861131.305807":
+	{
+		"height": 267.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454867401.92496":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454867456.639552":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454867876.792429":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454872519.630219":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454872814.095202":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454872825.728673":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454872923.220837":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454873034.100626":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454873290.435556":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454874044.956149":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454874125.495261":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454874548.435641":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454874581.359996":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454874750.639138":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454874878.981817":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454874889.146699":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454875104.638415":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454875240.570311":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454887636.812514":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454887921.105892":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454888287.173339":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454888301.353276":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454958947.200032":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454959061.353345":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454959141.897747":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454978514.569056":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454978533.225401":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454978552.480193":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454978570.826962":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454978678.305613":
+	{
+		"height": 148.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454978730.01741":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454978753.776387":
+	{
+		"height": 196.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454978873.321569":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454980700.27866":
+	{
+		"height": 232.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454980877.683628":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454980922.829116":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454980987.737868":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454981106.110498":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454981186.02011":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454981197.911794":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454981316.998507":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454981572.364275":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454981631.872957":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1454981742.51015":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1455072443.859056":
+	{
+		"height": 100.0
+	},
+	"output.exec":
+	{
+		"height": 125.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.stino_log":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454860792.571368":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454860815.881619":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454861058.999604":
+	{
+		"height": 313.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454867465.456899":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454872534.771978":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454872755.180112":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454872833.307103":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454872973.33936":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454873038.951761":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454873316.097792":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454874196.341225":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454874586.69472":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454874757.614631":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454874777.091991":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454874790.302478":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454874894.074217":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454875057.872602":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454875108.321628":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454875245.296489":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454876420.734169":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454876432.213824":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454876505.028728":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454876566.044875":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454876598.337689":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454876655.243943":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454876700.949735":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454876822.474074":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454876829.449642":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454876884.521732":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454876915.687184":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454876953.976087":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454876993.859499":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454877043.279468":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454877054.834749":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454877129.265315":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454877190.013636":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454877419.872772":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454877431.568414":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454877478.838519":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454884185.992473":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454884195.411204":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454884356.877028":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454884431.343339":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454884592.562856":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454884674.31762":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454884867.63426":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454884915.80829":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454884959.766929":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454885036.342186":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454885072.187717":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454885157.211905":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454885186.36451":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454885322.01128":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454885399.368933":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454887930.446716":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454888333.040224":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454888371.65253":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454888402.842325":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454888531.194906":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454888624.871052":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454888673.357435":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454888750.731943":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454888793.061706":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454888837.170852":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454888874.990752":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454888915.357264":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454888967.876929":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454889024.12271":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454889105.80691":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454889223.877502":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454889229.121376":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454889296.567332":
+	{
+		"height": 128.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454889485.550734":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454889541.823879":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454890639.604617":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454890682.74183":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454890743.098834":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454890782.406284":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454890812.514264":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454891087.226734":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454891167.5845":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454891271.539198":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454891342.584989":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454891417.635473":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454891421.625628":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454891484.310352":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454891552.48386":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454891630.804575":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454891676.382415":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454891722.709575":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454891752.807995":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454892218.188399":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454892270.506769":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454892434.220762":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454892443.138443":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454892460.208159":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454892689.2024":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454892698.170459":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454892713.297833":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454892938.320088":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454892951.995842":
+	{
+		"height": 146.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454893169.8816":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454959147.945459":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454959214.841322":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454959480.494111":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454980889.427204":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454980926.924677":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454981024.004225":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454981109.962915":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454981320.871394":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454981644.105624":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454981748.888823":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454981782.859152":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454981942.005763":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454981954.573185":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454981997.775492":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454982104.757316":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454982176.373925":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454982236.545568":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454982248.177677":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454982291.748326":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454982294.05072":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1454982305.956919":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "Anaconda Python Builder",
+	"project": "getTagsd.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 239.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
