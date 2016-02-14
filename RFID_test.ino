@@ -5,6 +5,11 @@
 
 // #define _DEBUG
 
+// try to give some sort of unique ID
+// for each device to inject into 
+// the tag
+String readerID = "H3AD";
+
 // RX and TX for UNO
 int SSrx = 8;
 int SStx = 9;
@@ -44,7 +49,7 @@ void loop()
   {
     String tag = getTag(&RFIDReader); 
     
-    Serial.println(tag);     
+    Serial.println(readerID + "," + tag);     
     drawLCD(tag);
   }
 }
