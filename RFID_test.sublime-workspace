@@ -27,7 +27,7 @@
 			"file": "RFID_test.ino",
 			"settings":
 			{
-				"buffer_size": 1448,
+				"buffer_size": 1576,
 				"line_ending": "Unix"
 			}
 		}
@@ -81,6 +81,7 @@
 	],
 	"file_history":
 	[
+		"/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SoftwareSerial/SoftwareSerial.h",
 		"/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h",
 		"/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/main.cpp",
 		"/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WString.h",
@@ -128,15 +129,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1448,
+						"buffer_size": 1576,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1430,
-								1430
+								965,
+								965
 							]
 						],
 						"settings":
@@ -427,6 +428,26 @@
 		"height": 100.0
 	},
 	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1455147475.683079":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1455343334.780261":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1455343361.109252":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1455343557.483931":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1455343745.437094":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1455343767.675601":
 	{
 		"height": 100.0
 	},
@@ -982,6 +1003,30 @@
 	{
 		"height": 100.0
 	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1455343378.094074":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1455343750.314911":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1455343781.408626":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1455343797.028294":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1455343807.877232":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1455343869.110943":
+	{
+		"height": 125.0
+	},
 	"pinned_build_system": "",
 	"project": "RFID_test.sublime-project",
 	"replace":
@@ -1027,7 +1072,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 239.0,
 	"status_bar_visible": true,
 	"template_settings":

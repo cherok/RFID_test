@@ -54,18 +54,18 @@ def getReaderID(_serial_number, _dbx):
     _cursor = _dbx.cursor()
     _cursor.execute(_get_reader_id % _serial_number)
     _reader_id = _cursor.fetchone()
+    _cursor.close()
 
     print("getReaderID: ", _serial_number, _reader_id)
 
     if _reader_id is None:
-        _cursor.close()
         return None
+
     else:
-        _cursor.close()
         return _reader_id[0]
 
 
-def tagExists(_tag_number, _dbx):
+def getTagID(_tag_number, _dbx):
     _tag_exists = (
         "select tag_id from tags "
         "where tag_number = '%s'")
@@ -74,13 +74,14 @@ def tagExists(_tag_number, _dbx):
     _cursor.execute(_tag_exists % _tag_number)
     _dbx.commit()
     _tag_id = _cursor.fetchone()
+    _cursor.close()
+
+    print("getTagID: ", _tag_number, _tag_id)
 
     if _tag_id is None:
-        _cursor.close()
         return None
 
     else:
-        _cursor.close()
         return _tag_id[0]
 
 
@@ -114,7 +115,7 @@ while True:
             serial_number = field
 
     try:
-        tag_id = tagExists(tag_number, dbx)
+        tag_id = getTagID(tag_number, dbx)
 
     except mysql.connector.errors.ProgrammingError:
         print("%s is not a valid tag_number" % tag_number)
