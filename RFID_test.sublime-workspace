@@ -4,12 +4,16 @@
 		"selected_items":
 		[
 			[
-				"get",
-				"getBytes"
+				"_E",
+				"_READER_ID"
 			],
 			[
 				"_",
-				"_rfidvalue"
+				"_RFIDReader"
+			],
+			[
+				"get",
+				"getBytes"
 			],
 			[
 				"tag",
@@ -27,7 +31,24 @@
 			"file": "RFID_test.ino",
 			"settings":
 			{
-				"buffer_size": 1576,
+				"buffer_size": 1171,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\"avr-objcopy\" -O ihex -R .eeprom  \"/tmp/Stino_build/RFID_test/RFID_test.elf\" \"/tmp/Stino_build/RFID_test/RFID_test.hex\"\nSketch uses 7,510 bytes (23.3%) of program storage space. Maximum is 32,256 bytes.\nGlobal variables use 405 bytes (19.8%) of dynamic memory, leaving 1,643 bytes for local variables. Maximum is 2,048 bytes.\n[Stino - Done building \"RFID_test\" in 2.4s.]\n[Stino - Start uploading...]\n\"/Applications/Arduino.app/Contents/Java/hardware\\tools\\avr/bin/avrdude\" \"-C/Applications/Arduino.app/Contents/Java/hardware\\tools\\avr/etc/avrdude.conf\" -v -patmega328p -carduino \"-P/dev/cu.usbmodem1421\" -b115200 -D \"-Uflash:w:/tmp/Stino_build/RFID_test/RFID_test.hex:i\" -V\n\navrdude: Version 6.0.1, compiled on Apr 14 2015 at 16:30:25\n         Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/\n         Copyright (c) 2007-2009 Joerg Wunsch\n\n         System wide configuration file is \"/Applications/Arduino.app/Contents/Java/hardware/tools/avr/etc/avrdude.conf\"\n         User configuration file is \"/Users/rdemeritt/.avrduderc\"\n         User configuration file does not exist or is not a regular file, skipping\n\n         Using Port                    : /dev/cu.usbmodem1421\n         Using Programmer              : arduino\n         Overriding Baud Rate          : 115200\n         AVR Part                      : ATmega328P\n         Chip Erase delay              : 9000 us\n         PAGEL                         : PD7\n         BS2                           : PC2\n         RESET disposition             : dedicated\n         RETRY pulse                   : SCK\n         serial program mode           : yes\n         parallel program mode         : yes\n         Timeout                       : 200\n         StabDelay                     : 100\n         CmdexeDelay                   : 25\n         SyncLoops                     : 32\n         ByteDelay                     : 0\n         PollIndex                     : 3\n         PollValue                     : 0x53\n         Memory Detail                 :\n\n                                  Block Poll               Page                       Polled\n           Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack\n           ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------\n           eeprom        65    20     4    0 no       1024    4      0  3600  3600 0xff 0xff\n           flash         65     6   128    0 yes     32768  128    256  4500  4500 0xff 0xff\n           lfuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00\n           hfuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00\n           efuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00\n           lock           0     0     0    0 no          1    0      0  4500  4500 0x00 0x00\n           calibration    0     0     0    0 no          1    0      0     0     0 0x00 0x00\n           signature      0     0     0    0 no          3    0      0     0     0 0x00 0x00\n\n         Programmer Type : Arduino\n         Description     : Arduino\n         Hardware Version: 3\n         Firmware Version: 4.4\n         Vtarget         : 0.3 V\n         Varef           : 0.3 V\n         Oscillator      : 28.800 kHz\n         SCK period      : 3.3 us\n\navrdude: AVR device initialized and ready to accept instructions\n\nReading | ################################################## | 100% 0.00s\n\navrdude: Device signature = 0x1e950f\navrdude: reading input file \"/tmp/Stino_build/RFID_test/RFID_test.hex\"\navrdude: writing flash (7510 bytes):\n\nWriting | ################################################## | 100% 1.21s\n\navrdude: 7510 bytes of flash written\navrdude: verifying flash memory against /tmp/Stino_build/RFID_test/RFID_test.hex:\navrdude: load data flash data from input file /tmp/Stino_build/RFID_test/RFID_test.hex:\navrdude: input file /tmp/Stino_build/RFID_test/RFID_test.hex contains 7510 bytes\navrdude: reading on-chip flash data:\n\nReading | ################################################## | 100% 0.97s\n\navrdude: verifying ...\navrdude: 7510 bytes of flash verified\n\navrdude done.  Thank you.\n\n\n[Stino - Done uploading.]\n",
+			"settings":
+			{
+				"buffer_size": 4182,
+				"line_ending": "Unix",
+				"name": "\"avr-objcopy\" -O ihex -R .eeprom  \"/tmp/Stino_buil"
+			}
+		},
+		{
+			"contents": "// setup lcd pins\n#define LCDRS  12\n#define LCDEnable 11\n#define LCDD4  5\n#define LCDD5  4\n#define LCDD6  3\n#define LCDD7  2\n\n\n// initialize LCD\nLiquidCrystal lcd(LCDRS, LCDEnable, LCDD4, LCDD5, LCDD6, LCDD7);\n\n\nvoid drawLCD(String _tag)\n{\n  lcd.setCursor(0, 0);\n  lcd.print(_tag);\n\n  lcd.setCursor(0, 1);\n  lcd.print(tagReadCount);\n}",
+			"settings":
+			{
+				"buffer_size": 334,
 				"line_ending": "Unix"
 			}
 		}
@@ -81,10 +102,10 @@
 	],
 	"file_history":
 	[
-		"/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SoftwareSerial/SoftwareSerial.h",
-		"/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h",
-		"/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/main.cpp",
 		"/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WString.h",
+		"/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h",
+		"/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SoftwareSerial/SoftwareSerial.h",
+		"/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/main.cpp",
 		"/Users/rdemeritt/Documents/Arduino/RFID_test/RFID_test.ino"
 	],
 	"find":
@@ -129,15 +150,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1576,
+						"buffer_size": 1171,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								965,
-								965
+								49,
+								49
 							]
 						],
 						"settings":
@@ -147,10 +168,67 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 390.0,
+						"translation.y": 247.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4182,
+								4182
+							]
+						],
+						"settings":
+						{
+							"auto_name": "\"avr-objcopy\" -O ihex -R .eeprom  \"/tmp/Stino_buil",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 334,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12,
+								12
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/Stino/Arduino.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -448,6 +526,138 @@
 		"height": 100.0
 	},
 	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1455343767.675601":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456063777.384695":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456064045.8252":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456064086.752642":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456064097.54152":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456064647.544819":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456064669.541816":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456064906.864624":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456064981.804079":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456065006.067671":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456065123.149012":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456065401.883709":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456065424.521514":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456065439.011932":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456065668.173552":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456065792.226401":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456065867.598439":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456066120.790767":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456066273.131331":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456066298.563332":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456066319.457398":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456066351.739002":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456066364.205716":
+	{
+		"height": 120.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456066727.069827":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456066745.742124":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456066764.364877":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456066870.958001":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456067030.629633":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456067080.690635":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456067098.227579":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456067140.282272":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456067168.246458":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456067181.403267":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/rdemeritt/Documents/Arduino/RFID_test|1456067325.157334":
 	{
 		"height": 100.0
 	},
@@ -1026,6 +1236,34 @@
 	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1455343869.110943":
 	{
 		"height": 125.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1456065135.02235":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1456065492.319493":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1456065800.59791":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1456065871.999413":
+	{
+		"height": 418.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1456066880.657785":
+	{
+		"height": 128.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1456067186.59751":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/rdemeritt/Documents/Arduino/RFID_test|1456067339.291918":
+	{
+		"height": 156.0
 	},
 	"pinned_build_system": "",
 	"project": "RFID_test.sublime-project",
