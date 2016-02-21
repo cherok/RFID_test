@@ -1,7 +1,5 @@
 #include <Arduino.h>
 #include <SoftwareSerial.h>
-#include <LiquidCrystal.h>
-#include <avr/pgmspace.h>
 
 //#define _DEBUG
 
