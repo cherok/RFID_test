@@ -1,6 +1,8 @@
 #include <Arduino.h>
 #include <SoftwareSerial.h>
 
+#define _VERSION 0.1
+
 //#define _DEBUG
 
 // define RX and TX pins for UNO
@@ -22,6 +24,10 @@ void setup()
 {
   RFIDReader.begin(9600);
   Serial.begin(9600);
+
+  // print version and reader identification
+  Serial.println("NestMonitor Version: " + String(_VERSION));
+  Serial.println("Reader ID: " + String(_READER_ID));
 }
 
 void loop()
