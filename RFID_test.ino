@@ -1,13 +1,17 @@
 #include <Arduino.h>
 #include <SoftwareSerial.h>
+#include <SPI.h>
+#include <MySensor.h>
+#include <Base64.h>  
 
-#define _VERSION 0.1
+#define _VERSION 0.2
+#define  _NEST_BOX_ID 0
 
-//#define _DEBUG
+#define _DEBUG
 
 // define RX and TX pins for UNO
 #define _SSRX 8
-#define _SSTX 9
+#define _SSTX 7
 
 // try to give some sort of unique ID
 // for each device to inject into 
@@ -17,17 +21,35 @@
 // number of tags read since execution
 int tagReadCount = 0;
 
+String readerID = "H3AD";
+
 // initialize serial for reader
 SoftwareSerial RFIDReader(_SSRX, _SSTX);
 
+// setup the MySensor objects
+MySensor gw;
+MyMessage msg(S_CUSTOM, V_VAR1);
+
 void setup()
 {
+
   RFIDReader.begin(9600);
-  Serial.begin(9600);
+  Serial.begin(115200);
 
   // print version and reader identification
   Serial.println("NestMonitor Version: " + String(_VERSION));
   Serial.println("Reader ID: " + String(_READER_ID));
+
+  Serial.println("Startup Radio");
+
+  // startup wireless module
+  gw.begin();
+  Serial.print("Node ID: ");
+  Serial.println(gw.getNodeId());
+  // Send the sketch version information
+  gw.sendSketchInfo("NestMonitor: ", "0.2");
+  // register w/ the gateway
+  gw.present(_NEST_BOX_ID, S_CUSTOM);
 }
 
 void loop()
@@ -37,10 +59,16 @@ void loop()
   // buffer
   if (RFIDReader.available() > 13)
   {
-    String tag = getTag(&RFIDReader);
-    
-    Serial.println(String(_READER_ID) + "," + tag);     
+    sendTag(getTag(&RFIDReader), msg, gw);         
   }
+}
+
+void sendTag(String _tag, MyMessage _msg, MySensor _gw)
+{
+  char _char_tag[_tag.length() + 1];
+  _tag.toCharArray(_char_tag, sizeof(_char_tag));
+
+  _gw.send(_msg.set(_char_tag));
 }
 
 String getTag(SoftwareSerial *_RFIDReader)
@@ -70,5 +98,17 @@ String getTag(SoftwareSerial *_RFIDReader)
     Serial.println("DEBUG: " + _tag);
   #endif
 
-  return _tag;
+  return String(trimTag(&_tag).toInt(), HEX);
+}
+
+String trimTag(String *_tag)
+{
+  String _trimmed_tag;
+
+  for (int i = _tag->length() - 10; i < _tag->length() - 1; i++)
+  {
+    _trimmed_tag += _tag->charAt(i);
+  }
+
+  return _trimmed_tag;
 }
